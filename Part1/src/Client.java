@@ -7,10 +7,10 @@ public class Client {
         //create products for filter testing
         Product one = new Product("123", "Dish Soap", 2.99, "Dawn", "Cleaning", 4.38);
         Product two = new Product("124", "Laundry Detergent", 7.99, "Tide", "Cleaning", 3.47);
-        Product three = new Product("125", "Tide Pods", 12.99, "Tide", "Food", 4.24);
+        Product three = new Product("125", "Tide Pods", 12.99, "Tide", "Cleaning", 4.24);
         Product four = new Product("126" , "Double Chunk Chocolate Cookie", 3.99, "Kirkland", "Food", 0.68);
         Product five = new Product("127", "Chicken Bake", 4.99, "Kirkland", "Food", 2.56);
-        Product six = new Product("128", "Boom", 0.00, "Kirkland", "Boom Meter Rating", 5.00);
+        Product six = new Product("128", "Boom", 0.00, "Kirkland", "Boom", 5.00);
         //put products into an array
         Product[] products = {one, two, three, four, five, six};
         //create a filteringProviderIF to filter products
@@ -93,6 +93,9 @@ public class Client {
                     System.out.println(product.getName());
                 }
             }
+        }
+        else{
+            System.out.println("No products found matching the criteria");
         }
     }
 }
